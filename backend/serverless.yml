@@ -1,7 +1,7 @@
 # TODO: Change the name of the org 
-org: albydel
-app: serverless-todo-app2
-service: serverless-todo-app2
+org: mokgonyanetb
+app: serverless-todo-app-project
+service: serverless-todo-app-project
 
 plugins:
   - serverless-webpack
@@ -24,10 +24,10 @@ provider:
   # Use these variables in the functions and resouorces section below. For example, 
   # ${self:provider.environment.ATTACHMENT_S3_BUCKET}
   environment:
-    PROJECT_NAME: serverless-todo-app2
-    TODOS_TABLE: serverless-todo-app2-${self:provider.stage}
+    PROJECT_NAME: serverless-todo-app-project
+    TODOS_TABLE: serverless-todo-app-project-${self:provider.stage}
     # TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    ATTACHMENT_S3_BUCKET: serverless-todo-app2-${self:provider.stage}
+    ATTACHMENT_S3_BUCKET: serverless-todo-app-project-${self:provider.stage}
     # SIGNED_URL_EXPIRATION: 300
 
 custom:
